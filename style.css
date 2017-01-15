@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,400,400i,700,700i);
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto Mono, serif;
+  background: #222;
+  margin: 2rem;
+  color: #fff;
+}
+
+#burningman {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  font-size: 0;
+  width: 80%;
+}
+
+#burningman figure {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0;
+  min-width: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+#burningman figure figcaption {
+  background: rgba(0, 0, 0, 0.4);
+  font-size: 1.1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: .5rem;
+  opacity: 0;
+  -webkit-transition: .5s;
+          transition: .5s;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-style: underline;
+}
+
+#burningman figure:hover img.visible + figcaption {
+  opacity: 1;
+}
+
+#burningman figure img {
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  -webkit-transition: .5s;
+          transition: .5s;
+}
+
+#burningman figure.halvies {
+  -webkit-box-flex: .5015;
+  -webkit-flex: .5015;
+      -ms-flex: .5015;
+          flex: .5015;
+  min-width: 150px;
+}
+
+#burningman figure
+img.visible {
+  opacity: 1;
+}
+
+#burningman + p {
+  font-size: 1.1rem;
+}
+
+@media all and (max-width: 500px) {
+  #burningman {
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+#texto {
+  width: 40%;
+  height: 100%;
+  display: inline-block;
+}
+
+.display-container {
+  width: 40%;
+}
+
+.mySlides {
+  display: none;
+  width: 450px;
+  height: 350px;
+}
+
+.w3-left, .w3-right, .w3-badge {
+  cursor: pointer;
+}
+
+.w3-badge {
+  height: 15px;
+  width: 15px;
+  padding: 0;
+}
